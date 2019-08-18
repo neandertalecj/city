@@ -1,0 +1,18 @@
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.col {
+    flex: 0 0 100%;
+}
+
+.col--1-2 { 
+    flex-basis: 50%;
+}

@@ -1,0 +1,56 @@
+.header {
+    height: 624px;
+    text-transform: uppercase;
+
+    background: 
+        url("/img/IPad.png") 0 7px no-repeat, 
+        url("/img/IPad-transp.png") 87% 118px no-repeat,
+        url("/img/Background.png") center;
+    
+        @media (max-width: 1250px) {
+            background: 
+                url("/img/IPad.png") -100px 7px no-repeat, 
+                url("/img/IPad-transp.png") 87% 118px no-repeat,
+                url("/img/Background.png") center;
+        }
+
+        @media (max-width: 1050px) {
+            background: url("/img/Background.png") center;
+            background-size: cover;
+        }
+
+        h1 {
+            position: absolute;
+            left: 300px;
+            top: 382px;
+            margin: 0;
+            font-size: 40px;
+            color: $dark;
+            width: 265px;
+            line-height: .7;
+
+            @media (max-width: 1250px) {
+                left: 200px;
+            }
+
+            @media (max-width: 1050px) {
+                display: none;
+            }
+
+            span.ipad {
+                font-size: 50px;
+                color: $accent;
+            } 
+        }
+}
+
+
+
+@media (max-width: 1050px) {
+    .header-left {
+        display: none;
+    }
+    .header-right {
+        flex-basis: 100%;
+    }
+}
