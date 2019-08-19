@@ -1,21 +1,26 @@
 .main-nav {
-    margin-top: 0;
-    background: darken($main, 9%);
     position: absolute;
     top:0;
     left: 100%;
     right: 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-top: 0;
+    background: darken($main, 9%);
     font-size: 1.2rem;
-
     overflow: hidden;
-
     transition: all ease-in-out 250ms;
+
     @media (min-width: 725px) {
         margin-top: 65px;
         position: relative;
         flex: auto;
         background: none;
         left: 0;
+    }
+
+    @media (max-width:725px) {
+        max-width: 730px;
     }
 
     ul {
@@ -25,9 +30,9 @@
         justify-content: space-between;
         margin: 0;
         margin-bottom: 70px;
-        text-align: center;
         padding-left: 0;
         height: 100vh;
+        text-align: center;
 
         @media(min-width: 725px) {
             flex-direction: row;
@@ -42,6 +47,10 @@
             width: 100%;
             height: 3px;
             background-color: $accent;
+
+            @media (max-width: 725px) {
+                background-color: transparent;
+            }
         }
     }
     
@@ -62,10 +71,10 @@
         }
 
         &::after {
+            content: '';
             position: absolute;
             top: 30px;
             left: 41%;
-            content: '';
             width: 0;
             height: 0;
             border-left: 8px solid transparent;
@@ -78,14 +87,15 @@
     }
 
     a {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
         font-size: 12px;
         font-weight: 600;
         color: $dark;
         text-decoration: none;
-        flex-basis: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        
         @media (min-width: 725px) {
             display: inline;
             line-height: 2.2;
@@ -93,6 +103,7 @@
 
         &:hover {
             color: $text-inverse;
+
             @media (min-width: 725px) {
                 background: none;
             }
@@ -113,6 +124,7 @@
     right: 1em;
     top: 1em;
     cursor: pointer;
+
     @media (min-width: 725px) {
         display: none;
     }

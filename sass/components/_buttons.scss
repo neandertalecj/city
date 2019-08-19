@@ -1,32 +1,47 @@
 .header {
     button {
-        display: inline-block;
+        display: flex;
+        width: 220px;
+        height: 50px;
+
         border: none;
-        padding: 1rem 2rem;
+        border-radius: 3px;
         margin: 0;
         text-decoration: none;
-         background-color: $accent;
+        background: linear-gradient(lighten($accent, 45%), $accent);
         color: $white;
         font-family: sans-serif;
-        font-size: 1rem;
+        font-size: 16px;
+        text-transform: uppercase;
         line-height: 1;
         cursor: pointer;
         text-align: center;
         transition: background 250ms ease-in-out, transform 150ms ease;
         -webkit-appearance: none;
         -moz-appearance: none;
+
+            span {
+                align-self: center;
+                padding-left: 4px;
+                font-weight: 700;
+            }
+
+            img {
+                margin-top: -7px;
+            }
+
             &:hover,
-        &:focus {
-            background:darken($accent, 15%);
-        }
+            &:focus {
+                background:darken($accent, 7%);
+            }
 
-        &:focus {
-            outline: 1px solid #fff;
-            outline-offset: -4px;
-        }
+            &:focus {
+                outline: 1px solid $white;
+                outline-offset: -4px;
+            }
 
-        &:active {
-            transform: scale(0.99);
-        }
+            &:active {
+                transform: scale(0.99);
+            }
     }      
 }
