@@ -1,18 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .container {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.grid {
-    display: flex;
-    flex-flow: wrap;
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.col {
-    flex: 0 0 100%;
-}
-
-.col--1-2 { 
-    flex-basis: 50%;
+hr {
+    border:none;
+    border-top: 1px dashed darken($main, 20%);
+    margin: 30px auto;
 }

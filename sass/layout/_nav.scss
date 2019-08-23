@@ -10,6 +10,7 @@
     font-size: 1.2rem;
     overflow: hidden;
     transition: all ease-in-out 250ms;
+    z-index: 20;
 
     @media (min-width: 725px) {
         margin-top: 65px;
@@ -124,6 +125,7 @@
     right: 1em;
     top: 1em;
     cursor: pointer;
+    z-index: 30;
 
     @media (min-width: 725px) {
         display: none;
