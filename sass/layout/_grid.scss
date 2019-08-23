@@ -18,3 +18,8 @@ body {
 .col--full {
     flex: 0 0 100%;
 }
+.col--1-resp {
+    @media(max-width: 522px) {
+        flex: 0 0 100%;
+    }
+}

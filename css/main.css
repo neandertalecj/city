@@ -451,6 +451,12 @@ body {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%; }
 
+@media (max-width: 522px) {
+  .col--1-resp {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; } }
+
 .main-nav {
   position: absolute;
   top: 0;
